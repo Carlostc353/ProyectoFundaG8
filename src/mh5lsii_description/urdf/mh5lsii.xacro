@@ -1,0 +1,367 @@
+<?xml version="1.0" ?>
+
+<robot name="mh5lsii" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find mh5lsii_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find mh5lsii_description)/urdf/mh5lsii.trans" />
+<xacro:include filename="$(find mh5lsii_description)/urdf/mh5lsii.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.011090103739351596 0.00022797791882665918 0.10315518556214519" rpy="0 0 0"/>
+    <mass value="6.766314683371327"/>
+    <inertia ixx="0.039535" iyy="0.044975" izz="0.033128" ixy="0.000175" iyz="4.1e-05" ixz="-0.000486"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_01_1">
+  <inertial>
+    <origin xyz="0.049423257467588036 -0.00240150574806688 0.06287800300541616" rpy="0 0 0"/>
+    <mass value="2.74595411805442"/>
+    <inertia ixx="0.009639" iyy="0.014176" izz="0.011386" ixy="0.000288" iyz="0.000294" ixz="-0.004201"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.0 -0.229" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_01_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.0 -0.229" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_01_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_02_1">
+  <inertial>
+    <origin xyz="-0.005331923635036859 0.06418219806904472 0.17365649623351526" rpy="0 0 0"/>
+    <mass value="6.763318661710877"/>
+    <inertia ixx="0.149826" iyy="0.116633" izz="0.044132" ixy="0.000123" iyz="0.001011" ixz="-4.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.088 0.0635 -0.33" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_02_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.088 0.0635 -0.33" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_02_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_03_1">
+  <inertial>
+    <origin xyz="-0.010417850763689798 -0.06566047170765882 0.019063299663247935" rpy="0 0 0"/>
+    <mass value="2.681871492262554"/>
+    <inertia ixx="0.007254" iyy="0.009118" izz="0.008082" ixy="3.3e-05" iyz="-3.4e-05" ixz="-0.000788"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.088 -0.0645 -0.73" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_03_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.088 -0.0645 -0.73" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_03_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_04_1">
+  <inertial>
+    <origin xyz="0.16098681758129338 -6.09203263927216e-06 0.00017633845563469475" rpy="0 0 0"/>
+    <mass value="3.0345870906853607"/>
+    <inertia ixx="0.005212" iyy="0.026116" izz="0.027027" ixy="-1.2e-05" iyz="-8e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1585 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_04_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1585 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_04_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_05_1">
+  <inertial>
+    <origin xyz="0.015586640791618978 -0.030964064569894863 -0.00016446853214213686" rpy="0 0 0"/>
+    <mass value="0.37951137478480873"/>
+    <inertia ixx="0.00025" iyy="0.000452" izz="0.000432" ixy="0.0" iyz="1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.493 -0.030999 -0.770249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_05_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.493 -0.030999 -0.770249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_05_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_06_1">
+  <inertial>
+    <origin xyz="0.01450144512471463 -4.057700439152878e-07 4.975171074528273e-05" rpy="0 0 0"/>
+    <mass value="0.04311612297123868"/>
+    <inertia ixx="1.1e-05" iyy="8e-06" izz="8e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5435 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_06_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5435 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/link_06_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="acople_1">
+  <inertial>
+    <origin xyz="0.015817002581675066 6.69007210366947e-07 -1.1276651433744789e-06" rpy="0 0 0"/>
+    <mass value="0.055705114869669475"/>
+    <inertia ixx="2.8e-05" iyy="1.5e-05" izz="1.5e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.567 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/acople_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.567 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/acople_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ob7_2_1">
+  <inertial>
+    <origin xyz="0.07017691342571097 1.194951294536395e-07 -3.4271062391288964e-06" rpy="0 0 0"/>
+    <mass value="0.3085040405049697"/>
+    <inertia ixx="0.000178" iyy="0.00053" izz="0.000577" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.590997 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.590997 0.0 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ob7_slider_d_1">
+  <inertial>
+    <origin xyz="-0.04811466000799036 -0.668746099494158 -0.7750009636934996" rpy="0 0 0"/>
+    <mass value="0.009612890331661439"/>
+    <inertia ixx="3e-06" iyy="0.0" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.756306 -0.645957 -1.560159" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_slider_d_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.756306 -0.645957 -1.560159" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_slider_d_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ob7_slider_i_1">
+  <inertial>
+    <origin xyz="0.053043310821363376 -0.6234089045465261 -0.7754502350968029" rpy="0 0 0"/>
+    <mass value="0.009612890331661439"/>
+    <inertia ixx="3e-06" iyy="0.0" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.655148 -0.646198 -1.530291" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_slider_i_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.655148 -0.646198 -1.530291" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_slider_i_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ob7_finger_d_1">
+  <inertial>
+    <origin xyz="0.01307070022070067 -0.007894728170446508 -0.01047603512321127" rpy="0 0 0"/>
+    <mass value="0.0070860389185776985"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.716674 0.045499 -0.784975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_finger_d_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.716674 0.045499 -0.784975" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_finger_d_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ob7_finger_i_1">
+  <inertial>
+    <origin xyz="0.013070691827939629 0.007894724006787111 0.010475794671614747" rpy="0 0 0"/>
+    <mass value="0.0070860389185776985"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="2e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.716674 -0.045499 -0.755024" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_finger_i_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.716674 -0.045499 -0.755024" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mh5lsii_description/meshes/ob7_finger_i_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="rev1" type="revolute">
+  <origin xyz="0.0 0.0 0.229" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link_01_1"/>
+  <axis xyz="1e-06 -0.0 1.0"/>
+  <limit upper="2.96706" lower="-2.96706" effort="100" velocity="100"/>
+</joint>
+
+<joint name="rev2" type="revolute">
+  <origin xyz="0.088 -0.0635 0.101" rpy="0 0 0"/>
+  <parent link="link_01_1"/>
+  <child link="link_02_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="1.134464" lower="-2.617994" effort="100" velocity="100"/>
+</joint>
+
+<joint name="rev3" type="revolute">
+  <origin xyz="0.0 0.128 0.4" rpy="0 0 0"/>
+  <parent link="link_02_1"/>
+  <child link="link_03_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+  <limit upper="3.316126" lower="-0.558505" effort="100" velocity="100"/>
+</joint>
+
+<joint name="rev4" type="continuous">
+  <origin xyz="0.0705 -0.0645 0.04" rpy="0 0 0"/>
+  <parent link="link_03_1"/>
+  <child link="link_04_1"/>
+  <axis xyz="1.0 -0.0 -1e-06"/>
+</joint>
+
+<joint name="rev5" type="revolute">
+  <origin xyz="0.3345 0.030999 0.000249" rpy="0 0 0"/>
+  <parent link="link_04_1"/>
+  <child link="link_05_1"/>
+  <axis xyz="-0.0 -0.999968 -0.00805"/>
+  <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
+</joint>
+
+<joint name="rev6" type="continuous">
+  <origin xyz="0.0505 -0.030999 -0.000249" rpy="0 0 0"/>
+  <parent link="link_05_1"/>
+  <child link="link_06_1"/>
+  <axis xyz="1.0 -0.0 -1e-06"/>
+</joint>
+
+<joint name="rig7" type="fixed">
+  <origin xyz="0.0235 0.0 0.0" rpy="0 0 0"/>
+  <parent link="link_06_1"/>
+  <child link="acople_1"/>
+</joint>
+
+<joint name="rig8" type="fixed">
+  <origin xyz="0.023997 0.0 0.0" rpy="0 0 0"/>
+  <parent link="acople_1"/>
+  <child link="ob7_2_1"/>
+</joint>
+
+<joint name="slider9" type="prismatic">
+  <origin xyz="0.165309 0.645957 0.790159" rpy="0 0 0"/>
+  <parent link="ob7_2_1"/>
+  <child link="ob7_slider_d_1"/>
+  <axis xyz="-0.0 -0.999968 -0.00805"/>
+  <limit upper="-0.055" lower="-0.1" effort="100" velocity="100"/>
+</joint>
+
+<joint name="slider10" type="prismatic">
+  <origin xyz="0.064151 0.646198 0.760291" rpy="0 0 0"/>
+  <parent link="ob7_2_1"/>
+  <child link="ob7_slider_i_1"/>
+  <axis xyz="0.0 0.999968 0.00805"/>
+  <limit upper="-0.055" lower="-0.1" effort="100" velocity="100"/>
+</joint>
+
+<joint name="rig11" type="fixed">
+  <origin xyz="-0.039632 -0.691456 -0.775184" rpy="0 0 0"/>
+  <parent link="ob7_slider_d_1"/>
+  <child link="ob7_finger_d_1"/>
+</joint>
+
+<joint name="rig12" type="fixed">
+  <origin xyz="0.061526 -0.600699 -0.775267" rpy="0 0 0"/>
+  <parent link="ob7_slider_i_1"/>
+  <child link="ob7_finger_i_1"/>
+</joint>
+
+</robot>

@@ -1,0 +1,8 @@
+prefix=/home/ctorres/lab_ws/devel
+
+Name: motoman_mh6_support
+Description: Description of motoman_mh6_support
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
